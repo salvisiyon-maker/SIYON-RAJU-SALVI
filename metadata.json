@@ -1,0 +1,6 @@
+{
+  "name": "VitalLink: End-to-End Healthcare Appointment and Staff Coordination",
+  "description": "Hospital management and coordination web app connecting doctors, nurses, admins, and patients with real-time appointments, prescriptions, patient history, and staff tasks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

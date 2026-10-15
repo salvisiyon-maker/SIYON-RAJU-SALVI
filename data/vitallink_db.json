@@ -1,0 +1,1191 @@
+{
+  "roles": [
+    {
+      "id": "admin",
+      "name": "Admin",
+      "description": "Hospital administrator with full management rights",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "doctor",
+      "name": "Doctor",
+      "description": "Licensed medical practitioner conducting visits and issuing prescriptions",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "nurse",
+      "name": "Nurse",
+      "description": "Healthcare provider recording vitals, managing check-ins and tasks",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "patient",
+      "name": "Patient",
+      "description": "Hospital patient viewing visits, prescriptions, and managing appointments",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept-cardio",
+      "name": "Cardiology",
+      "code": "CARDIO",
+      "head_doctor_id": "doc-priya",
+      "description": "Comprehensive heart and cardiovascular disease treatment and surgery",
+      "active": true,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "dept-genmed",
+      "name": "General Medicine",
+      "code": "GENMED",
+      "head_doctor_id": "doc-rajesh",
+      "description": "Primary care, adult preventative health, and internal medicine",
+      "active": true,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "dept-pediatrics",
+      "name": "Pediatrics",
+      "code": "PEDIA",
+      "head_doctor_id": null,
+      "description": "Comprehensive medical care for infants, children, and adolescents",
+      "active": true,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "dept-ortho",
+      "name": "Orthopedics",
+      "code": "ORTHO",
+      "head_doctor_id": null,
+      "description": "Musculoskeletal care, joint replacement, and sports medicine",
+      "active": true,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "dept-emergency",
+      "name": "Emergency & Trauma",
+      "code": "EMERG",
+      "head_doctor_id": null,
+      "description": "24/7 urgent medical triage and acute trauma stabilization",
+      "active": true,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "email": "admin@vitallink.com",
+      "password_hash": "$2b$10$k8UCRvn9NalOnEsN3CEFw.w8RS69CckgcfM/iMoQjNA85TPbw.gRq",
+      "role_id": "admin",
+      "full_name": "Dr. Vikramaditya Rathore",
+      "phone": "+91 98200 11223",
+      "address": "Administrative Block, Metro Health Tower, Mumbai",
+      "dob": "1978-04-12",
+      "avatar_url": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=256&q=80",
+      "failed_login_attempts": 0,
+      "must_change_password": false,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:38:48.224Z",
+      "locked_until": null
+    },
+    {
+      "id": "usr-doc-priya",
+      "email": "dr.priya@vitallink.com",
+      "password_hash": "$2b$10$V0UlPauC7M.x0MoLj/bsCOV1NiawShi0S/lMshywsyDsw02U3c062",
+      "role_id": "doctor",
+      "full_name": "Dr. Priya Sharma",
+      "phone": "+91 98201 33445",
+      "address": "402 Sea Breeze Apartments, Worli, Mumbai",
+      "dob": "1984-08-22",
+      "avatar_url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=256&q=80",
+      "failed_login_attempts": 0,
+      "must_change_password": false,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:37:36.192Z",
+      "locked_until": null
+    },
+    {
+      "id": "usr-doc-rajesh",
+      "email": "dr.rajesh@vitallink.com",
+      "password_hash": "$2b$10$V0UlPauC7M.x0MoLj/bsCOV1NiawShi0S/lMshywsyDsw02U3c062",
+      "role_id": "doctor",
+      "full_name": "Dr. Rajesh Kulkarni",
+      "phone": "+91 98202 55667",
+      "address": "701 Green Meadows, Shivaji Park, Dadar, Mumbai",
+      "dob": "1979-11-05",
+      "avatar_url": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=256&q=80",
+      "failed_login_attempts": 0,
+      "must_change_password": false,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "usr-nurse-sunita",
+      "email": "nurse.sunita@vitallink.com",
+      "password_hash": "$2b$10$ADQB9.ZPajHFFDLpZclTaeJ3fhsYykX/A4C7Gl.sLQ0lfUMtMHHK.",
+      "role_id": "nurse",
+      "full_name": "Nurse Sunita Patil",
+      "phone": "+91 98203 77889",
+      "address": "Flat 12, Staff Quarters, VitalLink Campus",
+      "dob": "1990-03-14",
+      "avatar_url": "https://images.unsplash.com/photo-1594824813576-9c4c1a2e9b11?auto=format&fit=crop&w=256&q=80",
+      "failed_login_attempts": 0,
+      "must_change_password": false,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "usr-nurse-rahul",
+      "email": "nurse.rahul@vitallink.com",
+      "password_hash": "$2b$10$ADQB9.ZPajHFFDLpZclTaeJ3fhsYykX/A4C7Gl.sLQ0lfUMtMHHK.",
+      "role_id": "nurse",
+      "full_name": "Nurse Rahul Deshmukh",
+      "phone": "+91 98204 99001",
+      "address": "Flat 18, Staff Quarters, VitalLink Campus",
+      "dob": "1993-07-19",
+      "avatar_url": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=256&q=80",
+      "failed_login_attempts": 0,
+      "must_change_password": false,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "usr-pat-ananya",
+      "email": "ananya.gupta@example.com",
+      "password_hash": "$2b$10$dkAgxXsBhfqj1YzyMKVieuwfkMYBid5o5FetovE8Ax3Yyn1LHz.xu",
+      "role_id": "patient",
+      "full_name": "Ananya Gupta",
+      "phone": "+91 98111 22334",
+      "address": "B-14 Silver Arch, Bandra West, Mumbai",
+      "dob": "1992-06-18",
+      "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=256&q=80",
+      "failed_login_attempts": 0,
+      "must_change_password": false,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:42:11.423Z",
+      "locked_until": null
+    },
+    {
+      "id": "usr-pat-rohan",
+      "email": "rohan.mehta@example.com",
+      "password_hash": "$2b$10$dkAgxXsBhfqj1YzyMKVieuwfkMYBid5o5FetovE8Ax3Yyn1LHz.xu",
+      "role_id": "patient",
+      "full_name": "Rohan Mehta",
+      "phone": "+91 98112 33445",
+      "address": "A-201 Sunrise Residency, Andheri East, Mumbai",
+      "dob": "1987-12-03",
+      "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&q=80",
+      "failed_login_attempts": 0,
+      "must_change_password": false,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "usr-pat-sneha",
+      "email": "sneha.joshi@example.com",
+      "password_hash": "$2b$10$uULfX5zx8P7KPwqRYOHHu.HLdrvLO9vDxXfJyLzB0cZVy1RPzM4dS",
+      "role_id": "patient",
+      "full_name": "Sneha Joshi",
+      "phone": "+91 98113 44556",
+      "address": "15 Harmony Lane, Thane West",
+      "dob": "1998-02-27",
+      "avatar_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=256&q=80",
+      "failed_login_attempts": 0,
+      "must_change_password": false,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:55:54.046Z",
+      "locked_until": null
+    },
+    {
+      "id": "usr-test-1792065114401",
+      "email": "newpatient.1792065114265@example.com",
+      "password_hash": "$2b$10$FcUdY/kx6NK6VUUNdEi6O.wd9alRpa28CWDWBmJvzuMKsZryRbUmG",
+      "role_id": "patient",
+      "full_name": "Test Self-Registered User",
+      "phone": "+91 99999 11111",
+      "created_at": "2026-10-15T11:51:54.401Z",
+      "updated_at": "2026-10-15T11:51:54.401Z",
+      "failed_login_attempts": 0,
+      "must_change_password": false
+    },
+    {
+      "id": "usr-1792065258833",
+      "email": "aarav.sharma@example.com",
+      "password_hash": "$2b$10$7Cs.0wG98BU9ES.jt0mZ5eA51MzxRHqr07dE4hAkcmaGyUNXIpSuO",
+      "role_id": "patient",
+      "full_name": "Aarav Sharma",
+      "phone": "+91 98333 44556",
+      "address": "Mumbai, Maharashtra",
+      "dob": "1996-04-12",
+      "avatar_url": "https://api.dicebear.com/7.x/initials/svg?seed=Aarav%20Sharma",
+      "must_change_password": false,
+      "failed_login_attempts": 0,
+      "created_at": "2026-10-15T11:54:18.833Z",
+      "updated_at": "2026-10-15T11:54:18.833Z"
+    },
+    {
+      "id": "usr-test-1792065400565",
+      "email": "newpatient.1792065400445@example.com",
+      "password_hash": "$2b$10$a75ScmQRremVCcECTk6POu19Tyuh5/hYoQ4R.xPohmucKX3FUbP/S",
+      "role_id": "patient",
+      "full_name": "Test Self-Registered User",
+      "phone": "+91 99999 11111",
+      "created_at": "2026-10-15T11:56:40.565Z",
+      "updated_at": "2026-10-15T11:56:40.565Z",
+      "failed_login_attempts": 0,
+      "must_change_password": false
+    },
+    {
+      "id": "usr-test-1792065466628",
+      "email": "newpatient.1792065466516@example.com",
+      "password_hash": "$2b$10$eXrg9Opq9nY.vzngvaB7cO4M2hyTB/csrgkY2KUw.Cp0QOYHeQHcW",
+      "role_id": "patient",
+      "full_name": "Test Self-Registered User",
+      "phone": "+91 99999 11111",
+      "created_at": "2026-10-15T11:57:46.628Z",
+      "updated_at": "2026-10-15T11:57:46.628Z",
+      "failed_login_attempts": 0,
+      "must_change_password": false
+    },
+    {
+      "id": "usr-test-1792065892692",
+      "email": "newpatient.1792065892582@example.com",
+      "password_hash": "$2b$10$pfgWS2chC7gHCrYq4apinO2/mwJMqhCq8/o4VtcgPwYs2Iigzo1SG",
+      "role_id": "patient",
+      "full_name": "Test Self-Registered User",
+      "phone": "+91 99999 11111",
+      "created_at": "2026-10-15T12:04:52.692Z",
+      "updated_at": "2026-10-15T12:04:52.692Z",
+      "failed_login_attempts": 0,
+      "must_change_password": false
+    },
+    {
+      "id": "usr-doc-1792065892912",
+      "email": "dr.custom.1792065892804@example.com",
+      "password_hash": "$2b$10$4mrCMlRqCw5hn1jTwHW/iu7dZf5fzBwOsKcuFRP2p1LopjfUx0OGC",
+      "role_id": "doctor",
+      "full_name": "Dr. Custom Surgeon",
+      "phone": "+91 98888 22222",
+      "created_at": "2026-10-15T12:04:52.912Z",
+      "updated_at": "2026-10-15T12:04:52.912Z",
+      "failed_login_attempts": 0,
+      "must_change_password": false
+    },
+    {
+      "id": "usr-1792065907545",
+      "email": "pooja.verma@example.com",
+      "password_hash": "$2b$10$q5Lik3H90eh2QpnL/h07cO0VrekX5WhyTLNZFGjkTMqpsTM5txXYK",
+      "role_id": "patient",
+      "full_name": "Pooja Verma",
+      "phone": "+91 91234 56789",
+      "address": "Pune, Maharashtra",
+      "dob": "1998-07-22",
+      "avatar_url": "https://api.dicebear.com/7.x/initials/svg?seed=Pooja%20Verma",
+      "must_change_password": false,
+      "failed_login_attempts": 0,
+      "created_at": "2026-10-15T12:05:07.545Z",
+      "updated_at": "2026-10-15T12:05:07.903Z",
+      "locked_until": null
+    },
+    {
+      "id": "usr-1792065913981",
+      "email": "dr.arjun@example.com",
+      "password_hash": "$2b$10$IRdmf2n2h6A1uLJdL5p4/eqm31CMFi.8e0ze4.wlGwrVMUtVXtfEy",
+      "role_id": "doctor",
+      "full_name": "Dr. Arjun Mehta",
+      "phone": "+91 98765 00000",
+      "address": "",
+      "dob": "",
+      "avatar_url": "https://api.dicebear.com/7.x/initials/svg?seed=Dr.%20Arjun%20Mehta",
+      "must_change_password": false,
+      "failed_login_attempts": 0,
+      "created_at": "2026-10-15T12:05:13.981Z",
+      "updated_at": "2026-10-15T12:05:14.217Z",
+      "locked_until": null
+    },
+    {
+      "id": "usr-1792065979673",
+      "email": "rohan.joshi@example.com",
+      "password_hash": "$2b$10$Qov7xE7fWuZ4rB3VImXnwOCA8ZHkUbKCvceFz6nFPMRx8lxZFqXni",
+      "role_id": "patient",
+      "full_name": "Rohan Joshi",
+      "phone": "+91 98220 12345",
+      "address": "Mumbai, Maharashtra",
+      "dob": "1996-04-12",
+      "avatar_url": "https://api.dicebear.com/7.x/initials/svg?seed=Rohan%20Joshi",
+      "must_change_password": false,
+      "failed_login_attempts": 0,
+      "created_at": "2026-10-15T12:06:19.673Z",
+      "updated_at": "2026-10-15T12:06:38.280Z",
+      "locked_until": null
+    }
+  ],
+  "doctors": [
+    {
+      "id": "doc-priya",
+      "user_id": "usr-doc-priya",
+      "department_id": "dept-cardio",
+      "specialization": "Consultant Interventional Cardiologist",
+      "license_no": "MCI-2010-449102",
+      "consultation_fee": 1200,
+      "availability_schedule": "{\"days\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"slots\":[\"09:00-13:00\",\"14:30-17:30\"]}",
+      "is_available": true,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "doc-rajesh",
+      "user_id": "usr-doc-rajesh",
+      "department_id": "dept-genmed",
+      "specialization": "Senior Physician & Internal Medicine Specialist",
+      "license_no": "MCI-2005-182390",
+      "consultation_fee": 900,
+      "availability_schedule": "{\"days\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Saturday\"],\"slots\":[\"10:00-14:00\",\"16:00-19:00\"]}",
+      "is_available": true,
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "doc-custom-1792065892913",
+      "user_id": "usr-doc-1792065892912",
+      "department_id": "dept-genmed",
+      "specialization": "Orthopedics",
+      "license_no": "MCI-2026-894402",
+      "consultation_fee": 750,
+      "is_available": true,
+      "created_at": "2026-10-15T12:04:52.912Z",
+      "updated_at": "2026-10-15T12:04:52.912Z"
+    },
+    {
+      "id": "doc-1792065914097",
+      "user_id": "usr-1792065913981",
+      "department_id": "dept-cardio",
+      "specialization": "Neurology",
+      "license_no": "MCI-2026-778899",
+      "consultation_fee": 800,
+      "availability_schedule": "{\"days\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"slots\":[\"09:00-13:00\",\"14:00-17:00\"]}",
+      "is_available": true,
+      "created_at": "2026-10-15T12:05:13.981Z",
+      "updated_at": "2026-10-15T12:05:13.981Z"
+    }
+  ],
+  "nurses": [
+    {
+      "id": "nurse-sunita",
+      "user_id": "usr-nurse-sunita",
+      "department_id": "dept-cardio",
+      "ward": "Cardio ICU - Ward 3B",
+      "shift_preference": "Day",
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "nurse-rahul",
+      "user_id": "usr-nurse-rahul",
+      "department_id": "dept-genmed",
+      "ward": "General Medicine - Ward 2A",
+      "shift_preference": "Evening",
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    }
+  ],
+  "patients": [
+    {
+      "id": "pat-ananya",
+      "user_id": "usr-pat-ananya",
+      "patient_id": "VL-2026-004812",
+      "blood_group": "B+",
+      "allergies": "Penicillin, Peanuts",
+      "emergency_contact": "Suresh Gupta (Father)",
+      "emergency_phone": "+91 98111 99990",
+      "registered_by_user_id": "usr-admin-1",
+      "created_at": "2026-10-10T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "pat-rohan",
+      "user_id": "usr-pat-rohan",
+      "patient_id": "VL-2026-009134",
+      "blood_group": "O+",
+      "allergies": "Sulfa drugs",
+      "emergency_contact": "Meera Mehta (Spouse)",
+      "emergency_phone": "+91 98112 88880",
+      "registered_by_user_id": "usr-nurse-sunita",
+      "created_at": "2026-10-13T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "pat-sneha",
+      "user_id": "usr-pat-sneha",
+      "patient_id": "VL-2026-007255",
+      "blood_group": "A+",
+      "allergies": "None reported",
+      "emergency_contact": "Kavita Joshi (Mother)",
+      "emergency_phone": "+91 98113 77770",
+      "registered_by_user_id": "usr-admin-1",
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "pat-test-1792065114403",
+      "user_id": "usr-test-1792065114401",
+      "patient_id": "VL-2026-T87027",
+      "blood_group": "AB+",
+      "allergies": "Aspirin",
+      "created_at": "2026-10-15T11:51:54.401Z",
+      "updated_at": "2026-10-15T11:51:54.401Z"
+    },
+    {
+      "id": "pat-1792065258960",
+      "user_id": "usr-1792065258833",
+      "patient_id": "VL-2026-H4WJH3",
+      "bloodGroup": "O+",
+      "allergies": "None",
+      "emergencyContact": "Radhika Sharma",
+      "emergencyPhone": "+91 98333 77889",
+      "registered_by_user_id": "usr-1792065258833",
+      "created_at": "2026-10-15T11:54:18.833Z",
+      "updated_at": "2026-10-15T11:54:18.833Z"
+    },
+    {
+      "id": "pat-test-1792065400567",
+      "user_id": "usr-test-1792065400565",
+      "patient_id": "VL-2026-T33451",
+      "blood_group": "AB+",
+      "allergies": "Aspirin",
+      "created_at": "2026-10-15T11:56:40.565Z",
+      "updated_at": "2026-10-15T11:56:40.565Z"
+    },
+    {
+      "id": "pat-test-1792065466630",
+      "user_id": "usr-test-1792065466628",
+      "patient_id": "VL-2026-T26068",
+      "blood_group": "AB+",
+      "allergies": "Aspirin",
+      "created_at": "2026-10-15T11:57:46.628Z",
+      "updated_at": "2026-10-15T11:57:46.628Z"
+    },
+    {
+      "id": "pat-test-1792065892693",
+      "user_id": "usr-test-1792065892692",
+      "patient_id": "VL-2026-T81223",
+      "blood_group": "AB+",
+      "allergies": "Aspirin",
+      "created_at": "2026-10-15T12:04:52.692Z",
+      "updated_at": "2026-10-15T12:04:52.692Z"
+    },
+    {
+      "id": "pat-1792065907671",
+      "user_id": "usr-1792065907545",
+      "patient_id": "VL-2026-YBKXZZ",
+      "bloodGroup": "B+",
+      "allergies": "None",
+      "emergencyContact": "Family / Emergency Contact",
+      "emergencyPhone": "+91 91234 56789",
+      "registered_by_user_id": "usr-1792065907545",
+      "created_at": "2026-10-15T12:05:07.545Z",
+      "updated_at": "2026-10-15T12:05:07.545Z"
+    },
+    {
+      "id": "pat-1792065979775",
+      "user_id": "usr-1792065979673",
+      "patient_id": "VL-2026-0YWV1Q",
+      "bloodGroup": "O+",
+      "allergies": "Sulfa drugs",
+      "emergencyContact": "Aarav Joshi",
+      "emergencyPhone": "+91 98220 67890",
+      "registered_by_user_id": "usr-1792065979673",
+      "created_at": "2026-10-15T12:06:19.673Z",
+      "updated_at": "2026-10-15T12:06:19.673Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt-001",
+      "patient_id": "pat-ananya",
+      "doctor_id": "doc-priya",
+      "department_id": "dept-cardio",
+      "date": "2026-10-15",
+      "start_time": "10:00",
+      "end_time": "10:30",
+      "status": "completed",
+      "reason": "Follow-up for elevated blood pressure and palpitations",
+      "notes": "Patient responded well to initial lifestyle changes. Adjusted dosage.",
+      "created_at": "2026-10-10T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "apt-002",
+      "patient_id": "pat-rohan",
+      "doctor_id": "doc-rajesh",
+      "department_id": "dept-genmed",
+      "date": "2026-10-15",
+      "start_time": "11:00",
+      "end_time": "11:30",
+      "status": "in_consultation",
+      "reason": "Persistent dry cough, mild wheezing, and chest tightness",
+      "notes": "Initial vitals recorded by Nurse Rahul. Auscultation in progress.",
+      "created_at": "2026-10-13T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "apt-003",
+      "patient_id": "pat-sneha",
+      "doctor_id": "doc-rajesh",
+      "department_id": "dept-genmed",
+      "date": "2026-10-16",
+      "start_time": "14:00",
+      "end_time": "14:30",
+      "status": "scheduled",
+      "reason": "Annual routine health checkup and blood panel review",
+      "notes": "Fasting lipid and glucose tests requested beforehand.",
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "apt-004",
+      "patient_id": "pat-ananya",
+      "doctor_id": "doc-priya",
+      "department_id": "dept-cardio",
+      "date": "2026-10-20",
+      "start_time": "11:30",
+      "end_time": "12:00",
+      "status": "scheduled",
+      "reason": "Cardiac stress test review and ECG evaluation",
+      "notes": "Bring previous echo reports.",
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    }
+  ],
+  "visits": [
+    {
+      "id": "vis-001",
+      "appointment_id": "apt-001",
+      "patient_id": "pat-ananya",
+      "doctor_id": "doc-priya",
+      "nurse_id": "nurse-sunita",
+      "department_id": "dept-cardio",
+      "visit_date": "2026-10-13T11:28:45.395Z",
+      "symptoms": "Mild morning headache, intermittent palpitations upon exertion, dizziness",
+      "diagnosis": "Stage 1 Essential Hypertension with sinus tachycardia",
+      "vitals_bp": "138/88 mmHg",
+      "vitals_pulse": 78,
+      "vitals_temp": 98.4,
+      "vitals_weight": 62,
+      "vitals_spo2": 99,
+      "notes": "Diet low in sodium advised. 30 mins brisk walking. Note patient has severe PENICILLIN allergy.",
+      "follow_up_date": "2026-11-05",
+      "created_at": "2026-10-10T11:28:45.394Z",
+      "updated_at": "2026-10-10T11:28:45.394Z"
+    },
+    {
+      "id": "vis-002",
+      "appointment_id": null,
+      "patient_id": "pat-rohan",
+      "doctor_id": "doc-rajesh",
+      "nurse_id": "nurse-rahul",
+      "department_id": "dept-genmed",
+      "visit_date": "2026-10-09T11:28:45.395Z",
+      "symptoms": "Acute productive cough for 4 days, low-grade fever, sore throat",
+      "diagnosis": "Acute Upper Respiratory Tract Infection (URTI)",
+      "vitals_bp": "122/80 mmHg",
+      "vitals_pulse": 84,
+      "vitals_temp": 99.6,
+      "vitals_weight": 74.5,
+      "vitals_spo2": 98,
+      "notes": "Steam inhalation twice daily. Adequate hydration. Avoid cold beverages.",
+      "follow_up_date": "2026-10-22",
+      "created_at": "2026-10-10T11:28:45.394Z",
+      "updated_at": "2026-10-10T11:28:45.394Z"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": "rx-001",
+      "visit_id": "vis-001",
+      "patient_id": "pat-ananya",
+      "doctor_id": "doc-priya",
+      "notes": "Take Telmisartan strictly in the morning after breakfast. Monitor BP weekly and keep a log.",
+      "issued_at": "2026-10-13T11:28:45.395Z",
+      "created_at": "2026-10-10T11:28:45.394Z",
+      "updated_at": "2026-10-10T11:28:45.394Z"
+    },
+    {
+      "id": "rx-002",
+      "visit_id": "vis-002",
+      "patient_id": "pat-rohan",
+      "doctor_id": "doc-rajesh",
+      "notes": "Complete the antibiotic course. Do not stop midway even if symptoms improve.",
+      "issued_at": "2026-10-09T11:28:45.395Z",
+      "created_at": "2026-10-10T11:28:45.394Z",
+      "updated_at": "2026-10-10T11:28:45.394Z"
+    }
+  ],
+  "prescription_items": [
+    {
+      "id": "rx-item-001",
+      "prescription_id": "rx-001",
+      "medicine_name": "Telmisartan 40mg",
+      "dosage": "40 mg",
+      "frequency": "Once daily (1-0-0)",
+      "duration": "30 days",
+      "instructions": "After breakfast with water",
+      "doctor_notes": "Antihypertensive ARB therapy",
+      "created_at": "2026-10-10T11:28:45.394Z"
+    },
+    {
+      "id": "rx-item-002",
+      "prescription_id": "rx-001",
+      "medicine_name": "Amlodipine 5mg",
+      "dosage": "5 mg",
+      "frequency": "Once daily (0-0-1)",
+      "duration": "30 days",
+      "instructions": "At bedtime",
+      "doctor_notes": "Calcium channel blocker for vascular tone",
+      "created_at": "2026-10-10T11:28:45.394Z"
+    },
+    {
+      "id": "rx-item-003",
+      "prescription_id": "rx-002",
+      "medicine_name": "Azithromycin 500mg",
+      "dosage": "500 mg",
+      "frequency": "Once daily (1-0-0)",
+      "duration": "5 days",
+      "instructions": "After lunch",
+      "doctor_notes": "Macrolide antibiotic. Safe for patients allergic to Sulfa.",
+      "created_at": "2026-10-10T11:28:45.394Z"
+    },
+    {
+      "id": "rx-item-004",
+      "prescription_id": "rx-002",
+      "medicine_name": "Montelukast 10mg + Levocetirizine 5mg",
+      "dosage": "1 tablet",
+      "frequency": "Once daily (0-0-1)",
+      "duration": "10 days",
+      "instructions": "Before sleep",
+      "doctor_notes": "Antiallergic and respiratory tract soothing",
+      "created_at": "2026-10-10T11:28:45.394Z"
+    }
+  ],
+  "shifts": [
+    {
+      "id": "shf-001",
+      "user_id": "usr-doc-priya",
+      "role": "doctor",
+      "department_id": "dept-cardio",
+      "shift_date": "2026-10-15",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "status": "scheduled",
+      "notes": "OPD clinic morning; Ward rounds afternoon",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "shf-002",
+      "user_id": "usr-doc-rajesh",
+      "role": "doctor",
+      "department_id": "dept-genmed",
+      "shift_date": "2026-10-15",
+      "start_time": "10:00",
+      "end_time": "18:00",
+      "status": "scheduled",
+      "notes": "Emergency on-call coverage",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "shf-003",
+      "user_id": "usr-nurse-sunita",
+      "role": "nurse",
+      "department_id": "dept-cardio",
+      "shift_date": "2026-10-15",
+      "start_time": "08:00",
+      "end_time": "16:00",
+      "status": "scheduled",
+      "notes": "Cardiology Ward 3B lead triage",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "shf-004",
+      "user_id": "usr-nurse-rahul",
+      "role": "nurse",
+      "department_id": "dept-genmed",
+      "shift_date": "2026-10-15",
+      "start_time": "14:00",
+      "end_time": "22:00",
+      "status": "scheduled",
+      "notes": "Evening intake & vitals recording",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk-001",
+      "assigned_by_user_id": "usr-doc-priya",
+      "assigned_to_user_id": "usr-nurse-sunita",
+      "patient_id": "pat-ananya",
+      "title": "Check 2-Hour Post-Medication Blood Pressure & SpO2",
+      "description": "Verify BP response to Telmisartan dose. Flag if systolic stays > 140 mmHg.",
+      "priority": "high",
+      "due_time": "2026-10-15T13:28:45.395Z",
+      "status": "pending",
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "tsk-002",
+      "assigned_by_user_id": "usr-doc-rajesh",
+      "assigned_to_user_id": "usr-nurse-rahul",
+      "patient_id": "pat-rohan",
+      "title": "Nebulization & Temperature Recheck",
+      "description": "Administer Salbutamol 2.5mg nebulizer and recheck vitals after 15 mins.",
+      "priority": "urgent",
+      "due_time": "2026-10-15T12:28:45.395Z",
+      "status": "in_progress",
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "tsk-003",
+      "assigned_by_user_id": "usr-admin-1",
+      "assigned_to_user_id": "usr-nurse-sunita",
+      "patient_id": null,
+      "title": "Monthly Emergency Crash Cart Inventory Audit",
+      "description": "Cross-check defibrillator pads, epinephrine vials, and oxygen regulators in Ward 3B.",
+      "priority": "medium",
+      "due_time": "2026-10-17T11:28:45.395Z",
+      "status": "pending",
+      "created_at": "2026-10-15T11:28:45.394Z",
+      "updated_at": "2026-10-15T11:28:45.394Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1792065979775",
+      "user_id": "usr-1792065979673",
+      "title": "Welcome to VitalLink Healthcare",
+      "message": "Your account is ready! Your unique Patient ID is VL-2026-0YWV1Q. You can now view visits, prescriptions, and book appointments.",
+      "type": "system",
+      "is_read": false,
+      "link": "/patient",
+      "created_at": "2026-10-15T12:06:19.673Z"
+    },
+    {
+      "id": "notif-1792065907672",
+      "user_id": "usr-1792065907545",
+      "title": "Welcome to VitalLink Healthcare",
+      "message": "Your account is ready! Your unique Patient ID is VL-2026-YBKXZZ. You can now view visits, prescriptions, and book appointments.",
+      "type": "system",
+      "is_read": false,
+      "link": "/patient",
+      "created_at": "2026-10-15T12:05:07.545Z"
+    },
+    {
+      "id": "notif-1792065258961",
+      "user_id": "usr-1792065258833",
+      "title": "Welcome to VitalLink Healthcare",
+      "message": "Your account is ready! Your unique Patient ID is VL-2026-H4WJH3. You can now view visits, prescriptions, and book appointments.",
+      "type": "system",
+      "is_read": false,
+      "link": "/patient",
+      "created_at": "2026-10-15T11:54:18.833Z"
+    },
+    {
+      "id": "notif-001",
+      "user_id": "usr-pat-ananya",
+      "title": "Prescription Available",
+      "message": "Dr. Priya Sharma has issued your updated prescription. You can view and download the PDF.",
+      "type": "prescription",
+      "is_read": false,
+      "link": "/patient/prescriptions",
+      "created_at": "2026-10-10T11:28:45.394Z"
+    },
+    {
+      "id": "notif-002",
+      "user_id": "usr-nurse-sunita",
+      "title": "High Priority Task Assigned",
+      "message": "Dr. Priya Sharma assigned task: Check 2-Hour Post-Medication BP for Ananya Gupta",
+      "type": "task",
+      "is_read": false,
+      "link": "/nurse/tasks",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "notif-003",
+      "user_id": "usr-doc-priya",
+      "title": "Appointment Checked In",
+      "message": "Patient Ananya Gupta has arrived and checked in for Cardiology consultation.",
+      "type": "appointment",
+      "is_read": true,
+      "link": "/doctor/appointments",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    },
+    {
+      "id": "notif-004",
+      "user_id": "usr-pat-sneha",
+      "title": "Welcome to VitalLink Healthcare",
+      "message": "Your registration is complete. Your Patient ID is VL-2026-007255. Please set your new secure password.",
+      "type": "system",
+      "is_read": false,
+      "link": "/profile",
+      "created_at": "2026-10-15T11:28:45.394Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "aud-1792065998615-891",
+      "user_id": "usr-1792065979673",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-1792065979775",
+      "details": "Rohan Joshi viewed patient profile VL-2026-0YWV1Q",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T12:06:38.615Z"
+    },
+    {
+      "id": "aud-1792065998281-331",
+      "user_id": null,
+      "action": "USER_LOGIN",
+      "entity_type": "user",
+      "entityId": "usr-1792065979673",
+      "details": "Rohan Joshi logged in as patient",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T12:06:38.281Z"
+    },
+    {
+      "id": "aud-1792065979778-55",
+      "user_id": null,
+      "action": "USER_REGISTER",
+      "entity_type": "user",
+      "entityId": "usr-1792065979673",
+      "details": "New user Rohan Joshi registered as patient",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T12:06:19.778Z"
+    },
+    {
+      "id": "aud-1792065914219-102",
+      "user_id": null,
+      "action": "USER_LOGIN",
+      "entity_type": "user",
+      "entityId": "usr-1792065913981",
+      "details": "Dr. Arjun Mehta logged in as doctor",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T12:05:14.219Z"
+    },
+    {
+      "id": "aud-1792065914098-94",
+      "user_id": null,
+      "action": "USER_REGISTER",
+      "entity_type": "user",
+      "entityId": "usr-1792065913981",
+      "details": "New user Dr. Arjun Mehta registered as doctor",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T12:05:14.098Z"
+    },
+    {
+      "id": "aud-1792065907904-448",
+      "user_id": null,
+      "action": "USER_LOGIN",
+      "entity_type": "user",
+      "entityId": "usr-1792065907545",
+      "details": "Pooja Verma logged in as patient",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T12:05:07.904Z"
+    },
+    {
+      "id": "aud-1792065907799-207",
+      "user_id": null,
+      "action": "USER_LOGIN",
+      "entity_type": "user",
+      "entityId": "usr-1792065907545",
+      "details": "Pooja Verma logged in as patient",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T12:05:07.799Z"
+    },
+    {
+      "id": "aud-1792065907677-642",
+      "user_id": null,
+      "action": "USER_REGISTER",
+      "entity_type": "user",
+      "entityId": "usr-1792065907545",
+      "details": "New user Pooja Verma registered as patient",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T12:05:07.677Z"
+    },
+    {
+      "id": "aud-1792065354536-100",
+      "user_id": "usr-pat-sneha",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-sneha",
+      "details": "Sneha Joshi viewed patient profile VL-2026-007255",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:55:54.536Z"
+    },
+    {
+      "id": "aud-1792065354347-444",
+      "user_id": "usr-pat-sneha",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-sneha",
+      "details": "Sneha Joshi viewed patient profile VL-2026-007255",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:55:54.347Z"
+    },
+    {
+      "id": "aud-1792065354046-760",
+      "user_id": "usr-pat-sneha",
+      "action": "CHANGE_PASSWORD",
+      "entity_type": "user",
+      "entityId": "usr-pat-sneha",
+      "details": "User successfully updated password",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:55:54.046Z"
+    },
+    {
+      "id": "aud-1792065328571-202",
+      "user_id": "usr-pat-sneha",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-sneha",
+      "details": "Sneha Joshi viewed patient profile VL-2026-007255",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:55:28.571Z"
+    },
+    {
+      "id": "aud-1792065326527-191",
+      "user_id": "usr-pat-sneha",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-sneha",
+      "details": "Sneha Joshi viewed patient profile VL-2026-007255",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:55:26.527Z"
+    },
+    {
+      "id": "aud-1792065322370-238",
+      "user_id": "usr-pat-sneha",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-sneha",
+      "details": "Sneha Joshi viewed patient profile VL-2026-007255",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:55:22.370Z"
+    },
+    {
+      "id": "aud-1792065321311-621",
+      "user_id": "usr-pat-sneha",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-sneha",
+      "details": "Sneha Joshi viewed patient profile VL-2026-007255",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:55:21.311Z"
+    },
+    {
+      "id": "aud-1792065319229-945",
+      "user_id": "usr-pat-sneha",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-sneha",
+      "details": "Sneha Joshi viewed patient profile VL-2026-007255",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:55:19.229Z"
+    },
+    {
+      "id": "aud-1792065317598-160",
+      "user_id": "usr-pat-sneha",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-sneha",
+      "details": "Sneha Joshi viewed patient profile VL-2026-007255",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:55:17.598Z"
+    },
+    {
+      "id": "aud-1792065304681-858",
+      "user_id": "usr-1792065258833",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-1792065258960",
+      "details": "Aarav Sharma viewed patient profile VL-2026-H4WJH3",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T11:55:04.681Z"
+    },
+    {
+      "id": "aud-1792065262998-937",
+      "user_id": "usr-pat-sneha",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-sneha",
+      "details": "Sneha Joshi viewed patient profile VL-2026-007255",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:54:22.998Z"
+    },
+    {
+      "id": "aud-1792065261707-429",
+      "user_id": null,
+      "action": "USER_LOGIN",
+      "entity_type": "user",
+      "entityId": "usr-pat-sneha",
+      "details": "Sneha Joshi logged in as patient",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:54:21.707Z"
+    },
+    {
+      "id": "aud-1792065258965-792",
+      "user_id": null,
+      "action": "USER_REGISTER",
+      "entity_type": "user",
+      "entityId": "usr-1792065258833",
+      "details": "New user Aarav Sharma registered as patient",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T11:54:18.965Z"
+    },
+    {
+      "id": "aud-1792064550884-336",
+      "user_id": "usr-pat-ananya",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-ananya",
+      "details": "Ananya Gupta viewed patient profile VL-2026-004812",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:42:30.884Z"
+    },
+    {
+      "id": "aud-1792064547486-584",
+      "user_id": "usr-pat-ananya",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-ananya",
+      "details": "Ananya Gupta viewed patient profile VL-2026-004812",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:42:27.486Z"
+    },
+    {
+      "id": "aud-1792064544869-833",
+      "user_id": "usr-pat-ananya",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-ananya",
+      "details": "Ananya Gupta viewed patient profile VL-2026-004812",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:42:24.869Z"
+    },
+    {
+      "id": "aud-1792064542766-252",
+      "user_id": "usr-pat-ananya",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-ananya",
+      "details": "Ananya Gupta viewed patient profile VL-2026-004812",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:42:22.766Z"
+    },
+    {
+      "id": "aud-1792064532405-122",
+      "user_id": "usr-pat-ananya",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-ananya",
+      "details": "Ananya Gupta viewed patient profile VL-2026-004812",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:42:12.405Z"
+    },
+    {
+      "id": "aud-1792064531428-612",
+      "user_id": null,
+      "action": "USER_LOGIN",
+      "entity_type": "user",
+      "entityId": "usr-pat-ananya",
+      "details": "Ananya Gupta logged in as patient",
+      "ip_address": "103.230.220.19, 169.254.169.126",
+      "created_at": "2026-10-15T11:42:11.428Z"
+    },
+    {
+      "id": "aud-1792064328225-174",
+      "user_id": null,
+      "action": "USER_LOGIN",
+      "entity_type": "user",
+      "entityId": "usr-admin-1",
+      "details": "Dr. Vikramaditya Rathore logged in as admin",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T11:38:48.226Z"
+    },
+    {
+      "id": "aud-1792064256195-969",
+      "user_id": null,
+      "action": "USER_LOGIN",
+      "entity_type": "user",
+      "entityId": "usr-doc-priya",
+      "details": "Dr. Priya Sharma logged in as doctor",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T11:37:36.195Z"
+    },
+    {
+      "id": "aud-1792064247130-689",
+      "user_id": "usr-pat-ananya",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-ananya",
+      "details": "Ananya Gupta viewed patient profile VL-2026-004812",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T11:37:27.130Z"
+    },
+    {
+      "id": "aud-1792064188966-875",
+      "user_id": "usr-pat-ananya",
+      "action": "VIEW_PATIENT",
+      "entity_type": "patient",
+      "entityId": "pat-ananya",
+      "details": "Ananya Gupta viewed patient profile VL-2026-004812",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T11:36:28.966Z"
+    },
+    {
+      "id": "aud-1792064188554-261",
+      "user_id": null,
+      "action": "USER_LOGIN",
+      "entity_type": "user",
+      "entityId": "usr-pat-ananya",
+      "details": "Ananya Gupta logged in as patient",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-15T11:36:28.554Z"
+    },
+    {
+      "id": "aud-001",
+      "user_id": "usr-admin-1",
+      "action": "REGISTER_PATIENT",
+      "entity_type": "patient",
+      "entity_id": "pat-ananya",
+      "details": "Admin registered patient Ananya Gupta with ID VL-2026-004812",
+      "ip_address": "192.168.1.10",
+      "created_at": "2026-10-10T11:28:45.394Z"
+    },
+    {
+      "id": "aud-002",
+      "user_id": "usr-doc-priya",
+      "action": "CREATE_PRESCRIPTION",
+      "entity_type": "prescription",
+      "entity_id": "rx-001",
+      "details": "Dr. Priya Sharma created prescription with 2 items for patient VL-2026-004812",
+      "ip_address": "192.168.1.42",
+      "created_at": "2026-10-10T11:28:45.394Z"
+    },
+    {
+      "id": "aud-003",
+      "user_id": "usr-nurse-sunita",
+      "action": "UPDATE_VITALS",
+      "entity_type": "visit",
+      "entity_id": "vis-001",
+      "details": "Nurse Sunita recorded vitals: BP 138/88, Pulse 78, Temp 98.4F",
+      "ip_address": "192.168.1.55",
+      "created_at": "2026-10-10T11:28:45.394Z"
+    }
+  ]
+}
